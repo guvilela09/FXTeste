@@ -1,0 +1,82 @@
+﻿@page "/Materiais/MateriaisSolicitacao"
+
+<section>
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="col-11 px-4 mb-0">
+                    <h1 style="text-align:center">Material Solicitações</h1>
+                </div>
+                <hr class=" mt-1 mb-4 bg-primary" />
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <!-- 1 coluna se quiser editar -->
+        <div class="row mb-3">
+            <div class="col-4">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="topico">
+                    <label for="floatingInput">Tópico:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 2 coluno pode ser editada -->
+        <div class="row mb-4">
+                 <div class="col">
+                           <div class="form-floating mb-3">
+                                <select class="form-select text-xxl-start" id="floatingSelectGrid" required>
+                                     <option value=""></option>
+                                     <option value="Urgente">Urgente</option>
+                                     <option value="Alta">Alta</option>
+                                     <option value="Media">Media</option>
+                                     <option value="Baixa">Baixa</option>
+                                </select>
+                                <label for="floatingInput">Prioridade</label>
+                           </div>
+                 </div>
+            <div class="col">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="orcamento">
+                    <label for="floatingInput">Orçamento:</label>
+                </div>
+            </div>
+        </div>
+                 
+        <!-- 3 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="quantidade">
+                    <label for="floatingInput">Quantidade:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="valor_unit">
+                    <label for="floatingInput">Valor Unitário:</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 coluna pode ser editada -->
+        <div class="row mb-3">
+            <div class="col">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="situacao"
+                           style="height:100px;">
+                    <label for="floatingInput">Situação:</label>
+                </div>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn fw-bolder text-white" type="button" style="background-color:#b41720;">Enviar</button>
+        </div>
+    </form>
+</section>
+
+@code {
+
+}

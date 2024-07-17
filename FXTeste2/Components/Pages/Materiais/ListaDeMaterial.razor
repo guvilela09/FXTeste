@@ -1,0 +1,97 @@
+﻿@page "/Materiais/ListaDeMaterial"
+
+<section class="vh-100 gradient-custom-2">
+    <div class="container py-5 h-100">
+        <div class="col-10 px-4 mb-0">
+            <h2 class="fow-bolder">Lista De Material</h2>
+        </div>
+        <hr class="bg-danger">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header fw-bolder">
+                            Filtros
+                        </div>
+                        <div class="card-body">
+                            <!-- Aqui você pode adicionar seus filtros -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="inputNome" class="form-label fw-bolder">Nome</label>
+                                    <input type="text" class="form-control" id="inputNome">
+                                </div>
+                                <!-- Adicione mais campos de filtro conforme necessário -->
+                                <button type="submit" class="btn fw-bolder text-white" style="background-color:#b41720;">Aplicar Filtros</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fornecedor</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">ValorDeCompra</th>
+                                <th scope="col">ValorDeUso</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>João Silva</td>
+                                <td>PC</td>
+                                <td>R$ 400,00</td>
+                                <td>R$ 300,00</td>
+                                <td>alteração de computador</td>
+                                <td class="align-middle">
+                                    <a href="#!" data-mdb-tooltip-init title="Editar Fornecedor">
+                                        <i class="bi bi-pen me-4 text-primary"></i>
+                                    </a>
+                                    <a href="#!" data-mdb-tooltip-init title="Adicionar">
+                                        <i class="bi bi-folder2-open text-success"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maria Oliveira</td>
+                                <td>notebook</td>
+                                <td>R$ 900,00</td>
+                                <td>R$ 600,00</td>
+                                <td>troca de plac</td>
+                                <td class="align-middle">
+                                    <a href="#!" data-mdb-tooltip-init title="Editar Fornecedor">
+                                        <i class="bi bi-pen me-4 text-primary"></i>
+                                    </a>
+                                    <a href="#!" data-mdb-tooltip-init title="Adicionar">
+                                        <i class="bi bi-folder2-open text-success"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Adicione mais linhas conforme necessário -->
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Próximo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+
+}

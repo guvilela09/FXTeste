@@ -1,0 +1,120 @@
+﻿@page "/Checklist"
+
+    <section>
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="col-11 px-4 mb-0">
+                        <h1 style="text-align:center">Checklist</h1>
+                    </div>
+                <hr class=" mt-1 mb-4 bg-primary" />
+                </div>
+            </div>
+        </div>
+
+        <form>
+        <!-- 1 coluna se quiser editar -->
+        <div class="row mb-3">
+            <div class="col-4">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="id_pc">
+                    <label for="floatingInput">Computador:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 2 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="placa_mae">
+                    <label for="floatingInput">Placa Mãe:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="processador">
+                    <label for="floatingInput">Processador:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="cooler">
+                    <label for="floatingInput">Cooler:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="memoria">
+                    <label for="floatingInput">Memoria:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 3 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="disco">
+                    <label for="floatingInput">Disco:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="dvd">
+                    <label for="floatingInput">DVD:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="fonte">
+                    <label for="floatingInput">Fonte:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="gabinete">
+                    <label for="floatingInput">Gabinete:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 4 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="so">
+                    <label for="floatingInput">SO:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="pci">
+                    <label for="floatingInput">PCI:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 5 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="pci_ex">
+                    <label for="floatingInput">PCI EX:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="date">
+                    <label for="floatingInput">Data:</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- button -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn fw-bolder text-white" type="button" style="background-color:#b41720;">Enviar</button>
+        </div>
+
+        </form>
+</section>
+
+@code {
+
+}

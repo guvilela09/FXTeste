@@ -1,0 +1,70 @@
+﻿@page "/Materiais/CadastrarMaterial"
+
+<section>
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="col-11 px-4 mb-0">
+                    <h1 style="text-align:center">Cadastrar Material</h1>
+                </div>
+                <hr class="bg-primary mb-4" />
+            </div>
+        </div>
+    </div>
+    <form>
+        <!-- 1 coluna se quiser editar -->
+        <div class="row mb-3">
+            <div class="col">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="fornecedor">
+                    <label for="floatingInput">Fornecedor:</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="categoria">
+                    <label for="floatingInput">Categoria:</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 coluna se quiser editar -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="ValorDeCompra">
+                    <label for="floatingInput">Valor de Compra:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="ValorDeUso">
+                    <label for="floatingInput">Valor de Uso:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 3 coluna se quiser editar -->
+        <div class="row mb-3">
+            <div class="col">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="descricao"
+                           style="height:100px;">
+                    <label for="floatingInput">Descrição:</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn fw-bolder text-white" type="button" style="background-color:#b41720;">Cadastrar</button>
+        </div>
+
+    </form>
+
+</section>
+
+@code {
+
+}

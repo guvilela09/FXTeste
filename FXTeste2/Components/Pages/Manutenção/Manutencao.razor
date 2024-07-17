@@ -1,0 +1,76 @@
+﻿@page "/Manutenção/Manutencao"
+
+<section>
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="col-11 px-4 mb-0">
+                    <h1 style="text-align:center">Manutenção</h1>
+                </div>
+                <hr class=" mt-1 mb-4 bg-primary" />
+            </div>
+        </div>
+    </div>
+
+    <form> 
+        <!-- 1 coluna pode ser editada -->
+        <div class="row mb-3">
+            <div class="col-4">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="id_pc">
+                    <label for="floatingInput">Computador:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 2 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="proxima_manutencao">
+                    <label for="floatingInput">Proxima Manutenção:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="ultima_manutencao">
+                    <label for="floatingInput">Ultima Manutenção:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 3 coluna pode ser editada -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="departamento">
+                    <label for="floatingInput">Departamento:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="status">
+                    <label for="floatingInput">Status:</label>
+                </div>
+            </div>
+        </div>
+        <!-- 4 coluna pode ser editada -->
+        <div class="row mb-3">
+            <div class="col">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="usuario_atual">
+                    <label for="floatingInput">Usuario Atual:</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- button -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn fw-bolder text-white" type="button" style="background-color:#b41720;">Enviar</button>
+        </div>
+
+    </form>
+
+</section>
+
+@code {
+
+}

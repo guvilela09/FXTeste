@@ -1,0 +1,93 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <img src="/images/FXLogoUnico.png" class="img-fluid" alt="image" width="40"/>
+        <div class="form-check form-switch col-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="btnSwitch"/>
+            <label class="form-check-label" for="btnSwitch"></label>
+        </div>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Fornecedores/CadastrarFornecedor">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Cadastrar Fornecedor
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Fornecedores/ListaFornecedores">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Lista Fornecedor
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Materiais/CadastrarMaterial">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Cadastrar Material
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Materiais/ListaDeMaterial">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Lista De Material
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Materiais/OrcamentoMaterial">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Orçamento Materiais
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Materiais/MateriaisSolicitacao">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Material Solicitação
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Devolucoes">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Devoluções
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Projetos">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Projetos
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="Checklist">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Checklist
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Manutenção/Manutencao">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Manutenção
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Manutenção/ManutencaoAgendamento">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Manutenção Agendamento
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/TI/ProdutosTi">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Produtos TI
+            </NavLink>
+        </div>
+    </nav>
+
+</div>
+
+<script>
+    document.getElementById('btnSwitch').addEventListener('click', () => {
+        if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+            document.documentElement.setAttribute('data-bs-theme', 'light')
+        }
+        else {
+            document.documentElement.setAttribute('data-bs-theme', 'dark')
+        }
+    })
+</script>
